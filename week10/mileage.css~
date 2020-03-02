@@ -1,0 +1,17 @@
+/*CODE*/
+#page {
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+#content {
+    font-family: 'Capriola', sans-serif;
+}
+
+#myList {
+    margin-left: 300px;
+}

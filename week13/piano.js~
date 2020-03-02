@@ -1,0 +1,40 @@
+document.getElementById("form1").addEventListener("submit", validate);
+
+function validate(event) {
+    event.preventDefault();
+    //validation code
+
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = this.responseText;
+            response = JSON.parse(response);
+            displayResults(response);
+            //document.getElementById("results").innerHTML = response;
+        }
+    }
+
+    var form1 = document.getElementById("form1");
+    var data = new FormData(form1);
+
+    xhr.open("POST", "assign13.php", true);
+    xhr.send(data);
+}
+
+function displayResults(data) {
+    console.log(data);
+    var output = "";
+    for (x of data) {
+        output += x.firstname + " " + x.lastname + "<br>" +
+        x.studentID + "<br>" + x.performance;
+    }
+    document.getElementById("results").innerHTML = output;
+}
+
+function secondInfo() {
+    if (document.getElementsByName('Duet').checked) {
+        document.getElementById('duetInfo').style.display = 'block';
+    }
+    else document.getElementById('duetInfo').style.display = 'none';
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            background-color: #2196F3;
+            padding: 10px;
+            gap: 10px;
+            grid-template-areas:
+                'header header header header header'
+                'menu main main main right'
+                'menu footer footer footer footer';
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media screen and (min-width:450px) {
+            .grid-container {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .grid-container {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        #item1 { grid-area: header; }
+        #item2 { grid-area: menu; }
+        #item3 { grid-area: main; }
+        #item4 { grid-area: right; }
+        #item5 { grid-area: footer; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Elements</h1>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or
+        <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+    <article class="grid-container">
+        <section id="item1" class="grid-item">This is my header, homie.</section>
+        <section id="item2" class="grid-item">Sidebar dude.</section>
+        <section id="item3" class="grid-item">Main crap, G.</section>
+        <section id="item4" class="grid-item">Right side stuff bro.</section>
+        <section id="item5" class="grid-item">This is the footer, compadre.</section>
+    </article>
+
+</body>
+
+</html>

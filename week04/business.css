@@ -1,0 +1,178 @@
+/* css code goes here */
+/* Code examples found on w3schools.com */
+
+.header {
+    overflow: hidden;
+    background-color: #000000;
+    padding: 15px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header div.logo-name {
+    display: flex;
+  }
+
+  #header-title {
+    color:white;
+  }
+
+  .header a:hover {
+    background-color: rgb(54, 54, 54);
+    color: whitesmoke;
+  }
+  
+  .header a.active {
+    background-color: rgb(255, 115, 1);
+    color: rgb(0, 0, 0);
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    .parallax {
+        background-attachment: scroll;
+      }
+  }
+
+  .parallax,
+  .parallax2,
+  .parallax3,
+  .parallax4,
+  .parallax5,
+  .parallax6 {
+  min-height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+    .parallax {
+      background-image: url("blackmesaoffice.jpg");
+      min-height: 500px;
+    }
+    
+    .parallax2 {
+      background-image: url("blackmesatram.jpg");
+      min-height: 500px;
+    }
+
+    .parallax3 {
+      background-image: url("blackmesahallway.jpg");
+      min-height: 500px;
+    }
+
+    .parallax4 {
+      background-image: url("blackmesasign.jpg");
+      min-height: 500px;
+    }
+
+    .parallax5 {
+      background-image: url("blackmesafaculty.jpg");
+      min-height: 500px;
+    }
+
+    .parallax6 {
+      background-image: url("blackmesacascade.jpg");
+      min-height: 500px;
+    }
+
+  .panels {
+    background-color:black;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 62%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .caption span.co {
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 115, 1);
+    padding: 15px;
+    font-size: 25px;
+    font-family: Verdana;
+  }
+
+  #info1 {
+    font-family:Arial;
+    font-size: 25px;
+    text-align:center;
+    color:rgb(255, 115, 1);
+  }
+
+  #info-paragraph1 {
+    font-family:Lucida;
+    font-size: 18px;
+    text-align:center;
+    color:white;
+    margin-left:400px;
+    margin-right:400px;
+  }
+
+  #info2 {
+    font-family:Arial;
+    font-size: 25px;
+    text-align:center;
+    color:rgb(255, 115, 1);
+  }
+
+  #info-paragraph2 {
+    font-family:Lucida;
+    font-size: 18px;
+    text-align:center;
+    color:white;
+    margin-left:400px;
+    margin-right:400px;
+  }
+
+  .heading {
+    font-family: Arial;
+    font-size: 25px;
+    color: rgb(255, 115, 1);
+    text-align: center;
+  }
+
+  .paragraph {
+    font-family: Lucida;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .video {
+    margin-top: 62px;
+    margin-left: 330px;
+  }

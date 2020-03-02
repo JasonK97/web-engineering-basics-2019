@@ -1,0 +1,35 @@
+/*CODE*/
+
+body {
+    background-color: gray;
+}
+
+#page {
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+button:hover {
+    background-color: rgb(5, 13, 80);
+    color: whitesmoke;
+}
+
+#content {
+    font-family: 'Capriola', sans-serif;
+}
+
+#listTitle {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Capriola', sans-serif;
+}
+
+#myList {
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Capriola', sans-serif;
+}

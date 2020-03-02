@@ -1,0 +1,93 @@
+/*CODE*/
+body {
+    background-color: rgb(12, 49, 80);
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+h4 {
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Monoton', cursive;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    /*padding: 10px;*/
+    gap: 10px;
+    grid-template-areas:
+        'header header header header header'
+        'menu main main main right'
+        'menu footer footer footer footer';
+}
+
+.grid-item {
+    background-color: rgba(156, 146, 139, 0.781);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /*font-size: 20px;*/
+}
+
+@media screen and (min-width:450px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+#header { grid-area: header; }
+#menu { grid-area: menu; }
+#main { grid-area: main; }
+#right { grid-area: right; }
+#footer { 
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    float: right;
+    margin-top: 50px;
+}
+
+.overview {
+    font-size: 20px;
+}
+
+.nav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: crimson;
+    font-size: 25px;
+}
+
+.nav a:hover {
+    color: rgb(4, 4, 34);
+    background-color: #f2f2f2;
+}
+
+.copyright {
+    margin-top: 40px;
+}
+
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+
+.active {
+    background-color: rgb(12, 49, 80);
+    color: #f2f2f2;
+}

@@ -1,0 +1,53 @@
+/*CODE*/
+body {
+    background-color: rgb(92, 0, 0);
+    color: whitesmoke;
+}
+
+h1 {
+    text-align:center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.flex-container > div {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    img {
+        width: 100%;
+    }
+    p {
+        width: 50%;
+        margin: auto;
+    }
+    body {
+        background-color: rgb(27, 27, 85);
+        color: whitesmoke;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img {
+        width: 90%;
+    }
+    p {
+        width: 50%;
+        margin: auto;
+    }
+    body {
+        background-color: rgb(1, 56, 8);
+        color: whitesmoke;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajax.css">
+    <script src="ajax.js"></script>
+    <title>AJAX Magic Baby</title>
+</head>
+
+<body>
+    <h1>Pick A Country!</h1>
+    <input type="button" class="country" value="USA" onclick="getUSA()">
+    <input type="button" class="country" value="Canada" onclick="getCanada()">
+    <input type="button" class="country" value="Mexico" onclick="getMexico()">
+    <input type="button" class="country" value="Russia" onclick="getRussia()">
+    <p id="countryInfo"></p>
+    <br><br>
+    <h1>Input File Name</h1>
+    <input type="text" id="fileName">
+    <input type="submit" value="Submit" onclick="getText()">
+    <div id="content"></div>
+
+</body>
+
+</html>

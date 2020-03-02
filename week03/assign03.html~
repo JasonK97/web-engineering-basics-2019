@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title name="top">Jason Kent's ADVANCED Home Page</title>
+    <style>
+        h1 {
+            font-family: "Verdana";
+        }
+
+        blockquote {
+            font-family: "Arial";
+            color: DodgerBlue;
+        }
+
+        p {
+            font-family: "Georgia";
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #gameForm {
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        form {
+            background-color: lightgrey;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+      <h1 id="top" style="text-align:center">Welcome to Jason Kent's Advanced Home Page</h1>
+    </header>
+    <a href="#gameForm"><p style="text-align:center">Go to Survey</p></a>
+    <hr />
+    <a target="_blank" href="https://twitter.com/JasonKent_"><img src="jason.jpg"
+            alt="A picture of me posing like a boss." class="width:50%;" height="400"></a>
+    <p style="text-align:center; font-family:Courier New;">Click the Pic</p>
+    <blockquote style="text-align:center" cite="https://www.keepinspiring.me/funny-quotes/"><b><em>&quot;People say
+                nothing is impossible, but I do nothing everyday&quot;</em> -A.A. Milne</b></blockquote>
+    <p style="text-align:center"> My name is Jason Kent, I am majoring in Software Engineering,
+        and I hail from the <strong>Pacific Northwest</strong> near Seattle, Washington.<br>
+        I enjoy playing guitar, art, photography, and videogames.</p>
+    <a target="_blank" href="https://www.instagram.com/jayswannn"><img src="jayswan.png"
+            alt="Drawn picture of myself."></a>
+    <hr />
+    <a href="../index.html">
+        <p style="text-align:center">CS 213 Assignments</p>
+    </a>
+    <table style="width:100%">
+        <tr>
+            <th>Course #</th>
+            <th>Course Description</th>
+            <th>Sec #</th>
+            <th>Class Time</th>
+            <th>Class Location</th>
+        </tr>
+        <tr>
+            <th>FDENG301</th>
+            <th>Advanced Writing and Research</th>
+            <th>13</th>
+            <th>M W F 10:15am-11:15am</th>
+            <th>SMI 355</th>
+        </tr>
+        <tr>
+            <th>CS235</th>
+            <th>Data Structures</th>
+            <th>01</th>
+            <th>M W F 11:30am-12:30pm</th>
+            <th>STC 394</th>
+        </tr>
+        <tr>
+            <th>CS213</th>
+            <th>Web Engineering 1</th>
+            <th>01</th>
+            <th>Tu Th 9:45am-11:15am</th>
+            <th>STC 398</th>
+        </tr>
+        <tr>
+            <th>REL225C</th>
+            <th>Foundations of the Restoration</th>
+            <th>22</th>
+            <th>Tu Th 12:45pm-1:45pm</th>
+            <th>HIN 257</th>
+        </tr>
+        <tr>
+            <th>WD100</th>
+            <th>Intro to Web Design/Development</th>
+            <th>11</th>
+            <th>Everyday</th>
+            <th>Online</th>
+        </tr>
+    </table>
+    <hr />
+    <div id="gameForm">
+      <h2 style="margin-left:125px">Please Fill Out This Form</h2>
+        <form action="">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br><br>
+            Gender:<br>
+            <select name="gender">
+              <option value="select">[Select One]</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select><br><br>
+            Favorite Foods: (Check all that apply)<br>
+            <input type="checkbox" name="food" value="mexican">Mexican<br>
+            <input type="checkbox" name="food" value="mexican">Italian<br>
+            <input type="checkbox" name="food" value="mexican">Chinese<br>
+            <input type="checkbox" name="food" value="other">Other:<input type="text" name="other"><br><br>
+            Gamer Preference:<br>
+            <input type="radio" name="preference" value="tabletop">Table Top Gamer<br>
+            <input type="radio" name="preference" value="videogame">Videogamer<br>
+            <input type="radio" name="preference" value="mobileNerd">Mobile Gamer<br><br>
+            Favorite game and why:<br>
+            <textarea rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>
+        <a href="#top">Back to top.</a>
+    </footer>
+</body>
+
+</html>

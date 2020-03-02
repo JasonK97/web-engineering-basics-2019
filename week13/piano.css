@@ -1,0 +1,31 @@
+/*CODE*/
+body {
+    background-color: grey;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#title {
+    /*text-align: center;*/
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+
+form {
+    padding: 15px;
+    /*margin-left: 37%;
+    margin-right: 25%;*/
+}
+
+.output {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#duetTitle {
+    font-size: 20px;
+}

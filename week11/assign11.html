@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PHP Calculator 9000</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Solve math problems on this beautiful website that's a calculator!">
+    <link type="text/css" rel="stylesheet" href="../week11/mortgage.css">
+    <script src="../week07/calculator.js"></script>
+</head>
+
+<body>
+    <div id="phpbox">
+        <h1>Mortgage Calculator</h1>
+        <form action="mortgage.php" method="GET">
+            APR: <input id="apr" type="text" name="apr" placeholder="APR" oninput="validInputAPR()" />
+            <p id="validAPR"></p><br>
+            Term: <input id="term" type="text" name="term" placeholder="Term" oninput="validInputTerm()" />
+            <p id="validTerm"></p><br>
+            Amount: <input id="amount" type="text" name="amount" placeholder="Amount" /><br><br>
+            <br>
+            <input type="submit" name="submit">
+            <input id="clear" type="reset" />
+        </form>
+    </div>
+</body>
+
+</html>

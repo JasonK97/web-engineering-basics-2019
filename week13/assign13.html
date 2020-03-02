@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Register your music student here!">
+    <link type="text/css" rel="stylesheet" href="../week13/piano.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Fredoka+One&display=swap" rel="stylesheet">
+    <title>Music Student Registration</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Music Student Registrations</h1>
+    </div>
+    <form id="form1" action="assign13.php"  onsubmit="verify()">
+        <strong>Performance Type:</strong><br>
+        <input type="radio" name="performance" value="Solo" oninput="showDuet(this)">Solo<br>
+        <input type="radio" name="performance" value="Duet" oninput="showDuet(this)">Duet<br>
+        <input type="radio" name="performance" value="Concerto" oninput="showDuet(this)">Concerto<br><br>
+        <strong>First Name:</strong><br>
+        <input type="text" name="first_name" required>*<br>
+        <strong>Last Name:</strong><br>
+        <input type="text" name="last_name" required>*<br><br>
+        <strong>Student ID:</strong><br>
+        <input type="text" name="studentID" oninput="numCheck(this)" required>*<br>
+        <p id="numError"></p><br>
+        <div id="duetInfo" style="display: none;">
+            <p id="duetTitle"><strong>Duet Person</strong></p>
+            <strong>First Name:</strong><br>
+            <input type="text" name="first_name2">*<br>
+            <strong>Last Name:</strong><br>
+            <input type="text" name="last_name2">*<br><br>
+            <strong>Student ID:</strong><br>
+            <input type="text" name="studentID2" oninput="numCheck2(this)">*<br>
+            <p id="numError2"></p><br>
+        </div>
+        <strong>Skill Level:</strong><br>
+        <input type="radio" name="level" value="Beginner">Beginner
+        <input type="radio" name="level" value="Intermediate">Intermediate
+        <input type="radio" name="level" value="Pre-advanced">Pre-Advanced
+        <input type="radio" name="level" value="Advanced">Advanced
+        <br><br>
+        <strong>Instrument:</strong><br>
+        <input type="radio" name="instrument" value="Piano">Piano
+        <input type="radio" name="instrument" value="Voice">Voice
+        <input type="radio" name="instrument" value="Guitar">Guitar
+        <input type="radio" name="instrument" value="Triangle">Triangle
+        <input type="radio" name="instrument" value="Banjo">Banjo
+        <br><br>
+        <strong>Location:</strong><br>
+        <input type="radio" name="location" value="Snow">Snow
+        <input type="radio" name="location" value="MC">The MC
+        <input type="radio" name="location" value="STC">STC
+        <input type="radio" name="location" value="Smith">Smith
+        <br><br>
+        <strong>Room Number:</strong><br>
+        <input type="radio" name="room" value="201">Room 201
+        <input type="radio" name="room" value="245">Room 245
+        <input type="radio" name="room" value="305">Room 305
+        <input type="radio" name="room" value="327">Room 327
+        <br><br>
+        <strong>Time:</strong><br>
+        <input type="radio" name="time" value="8:00">8:00
+        <input type="radio" name="time" value="8:30">8:30
+        <input type="radio" name="time" value="9:00">9:00
+        <input type="radio" name="time" value="9:30">9:30
+        <br><br>
+        <input type="submit" name="submit" value="Register">
+        <input type="reset" id="clear" value="Clear">
+        <br><br>
+    </form>
+    <div id="results"></div>
+
+    <script src="../week13/piano.js"></script>
+</body>
+
+</html>

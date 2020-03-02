@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Register your music student here!">
+    <link type="text/css" rel="stylesheet" href="../week13/piano.css">
+    <title>Music Student Registration</title>
+</head>
+
+<body>
+    <div>
+        <h1>Music Student Registrations</h1>
+    </div>
+    <form id="form1" action="assign13.php">
+        Performance Type:<br>
+        <input type="radio" name="performance" value="Solo">Solo<br>
+        <input type="radio" name="performance" value="Duet" onchange="secondInfo()">Duet<br>
+        <input type="radio" name="performance" value="Concerto">Concerto<br><br>
+        First name:<br>
+        <input type="text" name="first_name" required><br>
+        Last name:<br>
+        <input type="text" name="last_name" required><br><br>
+        Student ID:<br>
+        <input type="text" name="studentID" required><br><br>
+        <div id="duetInfo">
+            Duet Person<br>
+            First name:<br>
+            <input type="text" name="first_name2"><br>
+            Last name:<br>
+            <input type="text" name="last_name2"><br><br>
+            Student ID:<br>
+            <input type="text" name="studentID2"><br><br>
+        </div>
+        Skill Level:<br>
+        <select id="skillbox">
+            <option name="level" value="beginner">Beginner</option>
+            <option name="level" value="intermediate">Intermediate</option>
+            <option name="level" value="pre-advanced">Pre-Advanced</option>
+            <option name="level" value="advanced">Advanced</option>
+        </select><br><br>
+        Instrument:<br>
+        <select id="instbox">
+            <option name="instrument" value="piano">Piano</option>
+            <option name="instrument" value="voice">Voice</option>
+            <option name="instrument" value="guitar">Guitar</option>
+            <option name="instrument" value="triangle">Triangle</option>
+            <option name="instrument" value="banjo">Banjo</option>
+        </select><br><br>
+        Location:<br>
+        <select id="place">
+            <option name="location" value="snow">Snow</option>
+            <option name="location" value="manwaring">The MC</option>
+            <option name="location" value="stc">STC</option>
+            <option name="location" value="smith">Smith</option>
+        </select><br><br>
+        Room Number:<br>
+        <select id="roombox">
+            <option name="room" value="201">Room 201</option>
+            <option name="room" value="245">Room 245</option>
+            <option name="room" value="305">Room 305</option>
+            <option name="room" value="327">Room 327</option>
+        </select><br><br>
+        Time:<br>
+        <select id="timebox">
+            <option name="time" value="eight">8:00</option>
+            <option name="time" value="eightthirty">8:30</option>
+            <option name="time" value="nine">9:00</option>
+            <option name="time" value="ninethirty">9:30</option>
+        </select><br><br>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" id="clear" value="reset">
+    </form>
+    <div id="results"></div>
+
+    <script src="../week13/piano.js"></script>
+</body>
+
+</html>
